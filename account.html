@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="HTML,JavaScript" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>facebook-signup</title>
+  <link href="css/account.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
+    type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <div class="section">
+    <div class="container">
+      <div class="face-logo">
+        <img src="./image/facebook.svg" alt="loading" />
+      </div>
+      <div class="sign-up-card">
+        <div class="head">
+          <div class="content">
+            <h1>Create a new account</h1>
+            <p>It's quick and easy.</p>
+          </div>
+          <div>
+            <img onclick="window.location.href = './index.html'"
+              src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png" />
+          </div>
+        </div>
+        <div class="form">
+          <div class="form_card">
+            <form action="">
+              <div class="form_name wow">
+                <div class="create-name fname">
+                  <input type="text" class="inp hel" placeholder="First name" />
+                  <i class="error error-icon bi bi-exclamation-circle"></i>
+                  <div class="error txt-error"></div>
+                </div>
+                <div class="create-name sname">
+                  <input type="text" class="inp hel" placeholder="Surname" />
+                  <i class="error error-icon bi bi-exclamation-circle"></i>
+                  <div class="error txt-error"></div>
+                </div>
+              </div>
+              <div class="number">
+                <input type="text" class="inp numb" placeholder="Mobile number or Email address" />
+                <i class="error error-icon bi bi-exclamation-circle"></i>
+                <div class="error txt-error"></div>
+              </div>
+              <div class="password">
+                <input type="password" class="inp pass" placeholder="New password" />
+                <i class="error error-icon bi bi-exclamation-circle"></i>
+                <div class="error txt-error"></div>
+              </div>
+              <div class="birth">
+                <p>Date of birth</p>
+                <i class="error error-icon gender-ico bi bi-exclamation-circle"></i>
+              </div>
+              <div class="form_birth">
+                <select type="text" id="day" class="inp i_col" value="hii">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+                <select type="text" id="month" class="inp i_col" value="Apr">
+                  <option>Jan</option>
+                  <option>Feb</option>
+                  <option>Mar</option>
+                  <option>Apr</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>Aug</option>
+                  <option>Sep</option>
+                  <option>Oct</option>
+                  <option>Nav</option>
+                  <option>Dec</option>
+                </select>
+                <select type="text" id="year" class="inp i_col" value="2010">
+                  <option>1990</option>
+                  <option>1991</option>
+                  <option>1992</option>
+                  <option>1993</option>
+                  <option>1994</option>
+                  <option>1995</option>
+                  <option>1996</option>
+                  <option>1997</option>
+                  <option>1998</option>
+                  <option>1999</option>
+                  <option>2000</option>
+                  <option>2001</option>
+                  <option>2002</option>
+                  <option>2003</option>
+                  <option>2004</option>
+                  <option>2005</option>
+                  <option>2006</option>
+                  <option>2007</option>
+                  <option>2008</option>
+                  <option>2009</option>
+                  <option>2010</option>
+                  <option>2011</option>
+                  <option>2012</option>
+                  <option>2013</option>
+                  <option>2014</option>
+                  <option>2015</option>
+                  <option>2016</option>
+                  <option>2017</option>
+                  <option>2018</option>
+                  <option>2019</option>
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                </select>
+              </div>
+              <div class="birth">
+                <p>Gender</p>
+                <i class="error error-icon birth-ico bi bi-exclamation-circle"></i>
+              </div>
+              <div class="gender">
+                <div class="male nm">
+                  <label for="male">Male</label>
+                  <input type="radio" id="male" name="gender" class="male" />
+                </div>
+                <div class="female nm">
+                  <label for="female">Female</label>
+                  <input type="radio" id="female" name="gender" class="female" />
+                </div>
+                <div class="custom nm">
+                  <label for="custom">Custom</label>
+                  <input type="radio" id="custom" name="gender" class="custom" />
+                </div>
+              </div>
+              <div class="learn">
+                <p>
+                  People who use our service may have uploaded your contact
+                  information to Facebook. Learn more
+                </p>
+              </div>
+              <div class="policy">
+                <p>
+                  By clicking Sign Up, you agree to our Terms, Privacy Policy
+                  and Cookies Policy. You may receive SMS notifications from us
+                  and can opt out at any time.
+                </p>
+              </div>
+              <div class="creat">
+                <button class="btn-c btn">Create Account</button>
+              </div>
+            </form>
+            <p class="bottom" onclick="window.location.href = './index.html'">Already have an account?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const forms = document.querySelector('form');
+    const fField = document.querySelector('.fname');
+    const fInput = fField.querySelector('input');
+    const fErrorIcon = fField.querySelector('i');
+    const fErrorText = fField.querySelector('.txt-error');
+    const sField = document.querySelector('.sname');
+    const sInput = sField.querySelector('input');
+    const sErrorIcon = sField.querySelector('i');
+    const sErrorText = sField.querySelector('.txt-error');
+    const eField = document.querySelector('.number');
+    const eInput = eField.querySelector('input');
+    const eErrorIcon = eField.querySelector('i');
+    const eErrorText = eField.querySelector('.txt-error');
+    const pField = document.querySelector('.password');
+    const pInput = pField.querySelector('input');
+    const pErrorIcon = pField.querySelector('i');
+    const pErrorText = pField.querySelector('.txt-error');
+
+    // const dInput = document.querySelector('#day');
+    // const mInput = document.querySelector('#month');
+    // const yInput = document.querySelector('#year');
+    // const bErrorIcon = document.querySelector('.gender-ico');
+
+    let account = [];
+
+    forms.onsubmit = (e) => {
+      e.preventDefault();
+
+      // let pattern = /^[^ ]+@[^ ]+\.[a-z]{2-3}$/;
+
+      if (fInput.value === '') {
+        fErrorIcon.classList.add('errors');
+        fErrorText.classList.add('errors');
+        fInput.style.borderColor = 'red';
+        fErrorText.innerText = 'Enter your first name';
+      }
+      if (sInput.value === '') {
+        sErrorIcon.classList.add('errors');
+        sErrorText.classList.add('errors');
+        sInput.style.borderColor = 'red';
+        sErrorText.innerText = 'Enter your surname';
+      }
+      if (eInput.value === '') {
+        eErrorIcon.classList.add('errors');
+        eErrorText.classList.add('errors');
+        eInput.style.borderColor = 'red';
+        eErrorText.innerText = 'Enter your email or phoneNo';
+      }
+      if (pInput.value === '') {
+        pErrorIcon.classList.add('errors');
+        pErrorText.classList.add('errors');
+        pInput.style.borderColor = 'red';
+        pErrorText.innerText = 'Enter your password';
+      }
+      // console.log(dInput.value);
+      // // bErrorIcon.classList.add('errors');
+      // if(dInput.value === '1') {
+      //   bErrorIcon.classList.add('errors');
+      //   console.log(bErrorIcon);
+      // }
+
+      if (fInput.value !== '' && sInput.value !== '' && eInput.value !== '' && pInput.value !== '') {
+        let object = {
+          name: fInput.value + ' ' + sInput.value,
+          email: eInput.value,
+          password: pInput.value
+        }
+
+        account = [...account, object];
+        localStorage.setItem('accounts', JSON.stringify(account));
+
+        window.location.href = './index.html';
+      }
+    }
+    fInput.onkeyup = () => {
+      if (!(fInput.value === '')) {
+        fErrorIcon.classList.remove('errors');
+        fErrorText.classList.remove('errors');
+        fInput.style.borderColor = '#bfb7b7';
+      }
+    }
+    fInput.onkeydown = () => {
+      if (fInput.value === '') {
+        fErrorIcon.classList.add('errors');
+        fErrorText.classList.add('errors');
+        fInput.style.borderColor = 'red';
+      }
+    }
+    sInput.onkeyup = () => {
+      if (!(sInput.value === '')) {
+        sErrorIcon.classList.remove('errors');
+        sErrorText.classList.remove('errors');
+        sInput.style.borderColor = '#bfb7b7';
+      }
+    }
+    sInput.onkeydown = () => {
+      if (sInput.value === '') {
+        sErrorIcon.classList.add('errors');
+        sErrorText.classList.add('errors');
+        sInput.style.borderColor = 'red';
+      }
+    }
+    eInput.onkeyup = () => {
+      if (!(eInput.value === '')) {
+        eErrorIcon.classList.remove('errors');
+        eErrorText.classList.remove('errors');
+        eInput.style.borderColor = '#bfb7b7';
+      }
+    }
+    eInput.onkeydown = () => {
+      if (eInput.value === '') {
+        eErrorIcon.classList.add('errors');
+        eErrorText.classList.add('errors');
+        eInput.style.borderColor = 'red';
+      }
+    }
+    pInput.onkeyup = () => {
+      if (!(pInput.value === '')) {
+        pErrorIcon.classList.remove('errors');
+        pErrorText.classList.remove('errors');
+        pInput.style.borderColor = '#bfb7b7';
+      }
+    }
+    pInput.onkeydown = () => {
+      if (pInput.value === '') {
+        pErrorIcon.classList.add('errors');
+        pErrorText.classList.add('errors');
+        pInput.style.borderColor = 'red';
+      }
+    }
+  </script>
+</body>
+
+</html>

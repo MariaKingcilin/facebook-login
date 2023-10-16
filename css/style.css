@@ -1,0 +1,453 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+body {
+	background-color: #f0f2f5;
+}
+
+@media(min-width:320px){
+	#facebook-sec {
+		width: 100%;
+		height: 100vh;
+	}
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.facebook-row {
+		display: flex;
+		flex-wrap: wrap !important;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.facebook-col {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.facebook-form-col {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.facebook-imge {
+		width: 60%;
+	}
+	.facebook-card {
+		padding: 20px 10px 0 0;
+	}
+	
+	.facebook-imge-content h3 {
+		font-size: 28px;
+		font-weight: normal;
+		line-height: 32px;
+		margin-left: 30px;
+	}
+	
+	.facebook-form-card {
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+		margin: 40px 0 0;
+		padding: 20px;
+		width: 400px;
+	}
+	
+	.form-col input {
+		width: 100%;
+		padding: 23px 15px;
+		font-weight: 100;
+		font-size: 18px;
+		height: 22px;
+		line-height: 16px;
+		border: 1px solid #bfb7b7;
+		border-radius: 6px;
+	}
+	
+	.form-col input:focus {
+		outline: 0;
+		border-color: #1877f2;
+	}
+	
+	.form-col {
+		position: relative;
+		margin-bottom: 20px;
+	}
+	
+	.form-col .error-icon {
+		color: red;
+		position: absolute;
+		top: 22%;
+		right: 10px;
+	}
+	
+	.form-col .txt-error {
+		color: red;
+		padding: 5px 0 0 5px;
+		font-size: 15px;
+	}
+	
+	.form-col .error {
+		display: none;
+	}
+	
+	.errors {
+		display: block !important;
+	}
+	
+	.form-cols a {
+		display: block;
+		text-align: center;
+	}
+	
+	#sub-login {
+		color: #fff;
+		font-size: 20px;
+		font-weight: 600;
+		width: 100%;
+		padding: 10px 15px;
+		background-color: #1877f2;
+		border: none;
+		border-radius: 6px;
+		margin-bottom: 20px;
+	}
+	
+	#forget {
+		font-size: 15px;
+		margin-bottom: 20px;
+		text-decoration: none;
+	}
+	
+	.logi-col {
+		display: flex;
+		justify-content: center;
+	}
+	
+	#create-login {
+		color: #fff;
+		margin-top: 25px;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 10px 15px;
+		background-color: #42b72a;
+		border: none;
+		border-radius: 6px;
+	}
+	
+	.form-bottom {
+		text-align: center;
+		font-size: 14px;
+		margin-top: 30px;
+	}
+	
+	.form-col input {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	
+	input:-internal-autofill-selected {
+		background-color: #fff !important;
+	}
+}
+@media(min-width:768px){
+	#facebook-sec {
+		width: 100%;
+		height: 100vh;
+	}
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.facebook-row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.facebook-col {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.facebook-form-col {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.facebook-imge {
+		width: 60%;
+	}
+	.facebook-card {
+		padding: 20px 10px 0 0;
+	}
+	
+	.facebook-imge-content h3 {
+		font-size: 28px;
+		font-weight: normal;
+		line-height: 32px;
+		margin-left: 30px;
+	}
+	
+	.facebook-form-card {
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+		margin: 40px 0 0;
+		padding: 20px;
+		width: 400px;
+	}
+	
+	.form-col input {
+		width: 100%;
+		padding: 23px 15px;
+		font-weight: 100;
+		font-size: 18px;
+		height: 22px;
+		line-height: 16px;
+		border: 1px solid #bfb7b7;
+		border-radius: 6px;
+	}
+	
+	.form-col input:focus {
+		outline: 0;
+		border-color: #1877f2;
+	}
+	
+	.form-col {
+		position: relative;
+		margin-bottom: 20px;
+	}
+	
+	.form-col .error-icon {
+		color: red;
+		position: absolute;
+		top: 22%;
+		right: 10px;
+	}
+	
+	.form-col .txt-error {
+		color: red;
+		padding: 5px 0 0 5px;
+		font-size: 15px;
+	}
+	
+	.form-col .error {
+		display: none;
+	}
+	
+	.errors {
+		display: block !important;
+	}
+	
+	.form-cols a {
+		display: block;
+		text-align: center;
+	}
+	
+	#sub-login {
+		color: #fff;
+		font-size: 20px;
+		font-weight: 600;
+		width: 100%;
+		padding: 10px 15px;
+		background-color: #1877f2;
+		border: none;
+		border-radius: 6px;
+		margin-bottom: 20px;
+	}
+	
+	#forget {
+		font-size: 15px;
+		margin-bottom: 20px;
+		text-decoration: none;
+	}
+	
+	.logi-col {
+		display: flex;
+		justify-content: center;
+	}
+	
+	#create-login {
+		color: #fff;
+		margin-top: 25px;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 10px 15px;
+		background-color: #42b72a;
+		border: none;
+		border-radius: 6px;
+	}
+	
+	.form-bottom {
+		text-align: center;
+		font-size: 14px;
+		margin-top: 30px;
+	}
+	
+	.form-col input {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	
+	input:-internal-autofill-selected {
+		background-color: #fff !important;
+	}
+}
+@media(min-width:1000px){
+	#facebook-sec {
+		width: 100%;
+		height: 100vh;
+		padding-top: 70px;
+	}
+	.container {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.facebook-row {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.facebook-col {
+		width: 50%;
+	}
+
+	.facebook-form-col {
+		width: 50%;
+	}
+	
+	.facebook-imge {
+		width: 60%;
+	}
+	.facebook-card {
+		padding: 20px 10px 0 0;
+	}
+	
+	.facebook-imge-content h3 {
+		font-size: 28px;
+		font-weight: normal;
+		line-height: 32px;
+		margin-left: 30px;
+	}
+	
+	.facebook-form-card {
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+		margin: 40px 0 0;
+		padding: 20px;
+		width: 400px;
+	}
+	
+	.form-col input {
+		width: 100%;
+		padding: 23px 15px;
+		font-weight: 100;
+		font-size: 18px;
+		height: 22px;
+		line-height: 16px;
+		border: 1px solid #bfb7b7;
+		border-radius: 6px;
+	}
+	
+	.form-col input:focus {
+		outline: 0;
+		border-color: #1877f2;
+	}
+	
+	.form-col {
+		position: relative;
+		margin-bottom: 20px;
+	}
+	
+	.form-col .error-icon {
+		color: red;
+		position: absolute;
+		top: 22%;
+		right: 10px;
+	}
+	
+	.form-col .txt-error {
+		color: red;
+		padding: 5px 0 0 5px;
+		font-size: 15px;
+	}
+	
+	.form-col .error {
+		display: none;
+	}
+	
+	.errors {
+		display: block !important;
+	}
+	
+	.form-cols a {
+		display: block;
+		text-align: center;
+	}
+	
+	#sub-login {
+		color: #fff;
+		font-size: 20px;
+		font-weight: 600;
+		width: 100%;
+		padding: 10px 15px;
+		background-color: #1877f2;
+		border: none;
+		border-radius: 6px;
+		margin-bottom: 20px;
+	}
+	
+	#forget {
+		font-size: 15px;
+		margin-bottom: 20px;
+		text-decoration: none;
+	}
+	
+	.logi-col {
+		display: flex;
+		justify-content: center;
+	}
+	
+	#create-login {
+		color: #fff;
+		margin-top: 25px;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 10px 15px;
+		background-color: #42b72a;
+		border: none;
+		border-radius: 6px;
+	}
+	
+	.form-bottom {
+		text-align: center;
+		font-size: 14px;
+		margin-top: 30px;
+	}
+	
+	.form-col input {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	
+	input:-internal-autofill-selected {
+		background-color: #fff !important;
+	}
+}
